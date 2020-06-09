@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Entry
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 # Create your views here.
 
 class HomeView(ListView):
@@ -11,3 +11,8 @@ class HomeView(ListView):
 class EntryView(DetailView):
     model = Entry
     template_name = 'entries/entry_detail.html'
+
+class CreateEntryView(CreateView):
+    model = Entry
+    template_name = 'entries/create_entry.html'
+    fields = ['title', 'text']
