@@ -2,14 +2,14 @@
 {% load static %}
 {% block content %}
 
-{% for entry in entries %}
+
 <div class="entry-card">
   <h3>{{entry.title}}</h3>
   <hr>
   <p>{{entry.text}}</p>
-  <a href="{% url 'entry-detail' entry.pk %}"><button type="button" name="button">Read</button></a>
+  <hr>
   <p>Posted on {{entry.date}} by <a href="#">{{entry.author}}</a></p>
 </div>
-{% endfor %}
+
 
 {% endblock %}

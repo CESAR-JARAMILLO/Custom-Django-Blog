@@ -1,0 +1,11 @@
+body {
+  background-color: powderblue;
+  text-align: center;
+}
+
+.entry-card {
+  background-color: white;
+  display: inline-block;
+  padding: .5rem 2rem 0 2rem;
+  text-align: center;
+}
